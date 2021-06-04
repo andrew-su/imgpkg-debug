@@ -1,0 +1,4 @@
+extracted_bundle/
+release.lock
+release/.imgpkg/
+staging.lock

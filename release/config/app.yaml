@@ -1,0 +1,18 @@
+#@ load("@ytt:data", "data")
+---
+apiVersion: kappctrl.k14s.io/v1alpha1
+kind: App
+metadata:
+  name: my-app
+spec:
+  serviceAccountName: default
+  fetch:
+  - imgpkgBundle:
+      image: gcr.io/pivotal-knative/asu/imgpkg-debug/staging@sha256:9f16b84ff447396b884b70a44afb6641631e4a570c7b5ae0019908e80f4fb081
+  template:
+  - kbld:
+      paths:
+      - .imgpkg/images.yml
+      - config/deployment.yaml
+  deploy:
+  - kapp: {}

@@ -1,0 +1,7 @@
+---
+apiVersion: imgpkg.carvel.dev/v1alpha1
+images:
+- annotations:
+    kbld.carvel.dev/id: gcr.io/pivotal-knative/asu/go-rp:latest
+  image: gcr.io/pivotal-knative/asu/go-rp@sha256:37501babbe51cf83f15cb2a837d83d7fc2801c9cefa0891de9d5d6a9ef1163cf
+kind: ImagesLock

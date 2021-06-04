@@ -1,0 +1,6 @@
+---
+apiVersion: imgpkg.carvel.dev/v1alpha1
+bundle:
+  image: gcr.io/pivotal-knative/asu/imgpkg-debug/release@sha256:19907eeaa0bf3218e7bfe6f6b5280896ae923128e15f650e8a5829d80b566add
+  tag: "1.0"
+kind: BundleLock

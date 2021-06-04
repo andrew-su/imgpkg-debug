@@ -1,0 +1,7 @@
+---
+apiVersion: imgpkg.carvel.dev/v1alpha1
+images:
+- annotations:
+    kbld.carvel.dev/id: gcr.io/pivotal-knative/asu/imgpkg-debug/staging@sha256:9f16b84ff447396b884b70a44afb6641631e4a570c7b5ae0019908e80f4fb081
+  image: gcr.io/pivotal-knative/asu/imgpkg-debug/staging@sha256:9f16b84ff447396b884b70a44afb6641631e4a570c7b5ae0019908e80f4fb081
+kind: ImagesLock
